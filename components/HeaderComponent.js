@@ -33,10 +33,12 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start'
   },
   title: {
-    fontSize: 30
+    fontSize: 30,
+    fontFamily: 'Gotham'
   },
   desc: {
-    fontSize: 15
+    fontSize: 15,
+    fontFamily: 'Gotham'
   }
 });
 
