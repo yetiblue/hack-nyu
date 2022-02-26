@@ -1,4 +1,7 @@
-import { StyleSheet, Text, View, FlatList, Image } from "react-native";
+import { StyleSheet, Text, View, FlatList, Image, Button } from "react-native";
+// import { NavigationContainer } from "@react-navigation/native";
+// import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 import { useState } from "react";
 function FooterComponent() {
   const [images, setImages] = useState([
@@ -35,6 +38,7 @@ function FooterComponent() {
         horizontal={true}
         data={images}
         renderItem={({ item, index }) => (
+          //   <Button onPress={() => navigation.navigate}>
           <Image
             style={styles.containerImage}
             source={item} /* Use item to set the image source */
@@ -43,6 +47,7 @@ function FooterComponent() {
             } /* Important to set a key for list items,
                        but it's wrong to use indexes as keys, see below */
           />
+          //   </Button>
         )}
       ></FlatList>
       {/* <Image source={require(photoUrl)} /> */}
